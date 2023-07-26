@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #eaebef;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    transition: .3s;
+}
+
+.nav {
+    background-color: white;
+    width: 300px;
+    left: -300px;
+    transition: .3s;
+    position: fixed;
+}
+
+.nav2 {
+    left: 0;
+}
+
+.lista {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+}
+
+.list-item {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list-item-clik {
+    cursor: pointer;
+}
+
+.list-bottom {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.list-arrow {
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #303440;
+    cursor: pointer;
+}
+
+.nav-link-inside:hover {
+    background-color: #f6f8fa;
+}
+
+.list-show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .3s;
+    height: 0;
+}
+
+.nav-link-inside {
+    border-radius: 6px;
+    text-align: left;
+}
+
+.arrow .list-arrow {
+    transform: rotate(90deg);
+}
+
+.list-img {
+    color: #303440;
+}
+
+.dark {
+    background-color: #343D5B;
+    border-radius: 1000px;
+    display: flex;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    right: 25px;
+    top: 16px;
+    height: 30px;
+}
+
+span {
+    width: 34px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-active {
+    background-color: #1d2335;
+    color: white;
+    transition: .3s;
+}
+
+.nav-active {
+    color: #eaebef;
+    background-color: #282f42;
+}
+
+.a-active {
+    color: white;
+}
+
+.list-show-active {
+    border-left: 2px solid #c9cdda;
+    transition: .3s;
+}
+
+.a-active-2 {
+    color: white;
+}
+
+.a-active-2:hover {
+    background-color: #343D5B;
+}
+
+.toggle {
+    width: 100%;
+    height: 0px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle2 {
+    top: 10px;
+    left: 300px;
+    font-size: 26px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* 
+
+como crear una barra lateral con secciones
+
+1 hacer un nav y añadir una clase ejemplo (nav)
+
+2 poner un ul adentro y añadir una clase (lista)
+
+3 poner un div adentro de cada li que no contenga ningun menu expandible un enlace y una imagen cada uno con una clase
+clase del li list item clase del div list-botom clase de la imagen list-img
+clase del enlace nav link
+
+4 crear otra lista  con la misma clase que la anterior (list item) pero añadir un modificador list item, click
+
+5 pero le agregamos un div con una clase unica para los elementos que sean expandibles (list botom click)
+
+6 se le coloca una imagen unica en este caso una flecha (list-arrow) y un enlace nav link
+
+
+
+8 poner una lista desordenada con una clase (list-show) todas las listas desodenadas con un menu desplegable tendran la misma clase
+exceptuando el elemento padre ejemplo list show
+
+
+9 poner una lista dentro con una clase esta clase representara todas las listas dentro de un menu
+ejemplo list_inside y un enlace nav link ademas de un modificador nav link inside
+
+copiar los list inside varias veces con todo su contenido
+
+despues copiar los li dentro del elemento padre las veces que quieras
+
+10 agregar un enlace con una clase igual que las anteriores pero con un modificador
+
+11 copiar el li la cantidad de veces que necesitees list item click
+
+CSS 
+
+
+establecer los datos de la lista desordenada padre de todas las otras listas 
+con display flex justify content center y flex direccion colum ademas del background
+
+al hijo directo de ul 
+
+quitarle el list style
+with 100& 
+tect aling center 
+un overflow hidden para usarlo en el futuro         agregarle una clase a
+
+
+*/
